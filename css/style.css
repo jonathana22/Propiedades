@@ -676,7 +676,7 @@ cta
     margin-bottom:30px;
 }
 .cta-bg{
-    background-color:  #03a9f4;
+    background-color:  #f40303;
     padding-top: 40px;
 }
 .cta-bg h1{
@@ -741,12 +741,12 @@ cta
 .help-block ul li{
     color:#fff;
     padding: 0px 10px;
-    background-color:  #03a9f4;
+    background-color:  #f40303;
     font-size: 12px;
 }
 .footer{
     padding: 50px 0;
-    background-color:  #03a9f4;
+    background-color:  #f41f03;
 }
 .footer .alo{
     display: block;
