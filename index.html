@@ -28,6 +28,30 @@
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
+
+        <!-- Booststrap y jQuery insertar imagenes-->
+                <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+                <!-- Booststrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!--  /Booststrap -->
+
+        <link rel="stylesheet" href="css/icons.css">
+        <link rel="stylesheet" href="css/grid.css">
+        <link rel="stylesheet" href="css/modal.css">
+        <link rel="stylesheet" href="css/styles2.css">
+        <!-- Bootstrap y jQuery -->
+
+        <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+        <!--  /Bootstrap y jQuery -->
+
+
+        <script src="js/modal.js"></script>
+        <script src="js/functions.js"></script>
+        <script src="js/scripts.js"></script>
+        <!-- Booststrap y jQuery insertar imagenes-->
     </head>
     <body data-spy="scroll" data-target=".navbar" data-offset="80">
 
@@ -90,7 +114,7 @@
                         <!-- LAYER NR. 3 
                         <div class="tp-caption slider-button scroll-to" data-x="center" data-y="center" data-voffset="120" data-speed="500" data-start="2400" data-easing="Power4.easeInOut" data-captionhidden="on">
                             <a class="btn btn-white" href="#about"></a>
-                        </div> <!-- /tp-caption -->
+                        </div>/tp-caption -->
                     </li>
                     <!-- SLIDE 2 -->
                     <li data-transition="fade" data-slotamount="7" data-masterspeed="1500">
@@ -111,7 +135,7 @@
                         <!-- LAYER NR. 3 
                         <div class="tp-caption slider-button scroll-to" data-x="center" data-y="center" data-voffset="120" data-speed="500" data-start="2400" data-easing="Power4.easeInOut" data-captionhidden="on">
                             <a class="btn btn-white" href="#about">See more</a>
-                        </div> <!-- /tp-caption -->
+                        </div> /tp-caption -->
                     </li>
                     <!-- SLIDE 3 -->
                 </ul>
@@ -723,7 +747,7 @@
                 </div>
             </div>
             <div class="clearfix"></div>
-        </section><!--news section end-->
+        </section>news section end-->
 
 <!--TEXTO CENTRO
         <div class="cta">
@@ -808,13 +832,47 @@
                     </div>
                 </div>
             </div>
-        </section>
-        CONTACTO-->
+        </section>-->
+        <div class="modal">
+            <div class="modal-main">
+                <div class="row">
+                    <div class="c-3-lg c-3-md c-1-sm close-modal"></div>
+                    <div class="c-6-lg c-6-md c-10-sm c-12-xs close-modal">
+                        <div class="modal-card" id="loading">
+                            <div class="preloader"></div>
+                            <span class="tag">Cargando...</span>
+                        </div>
+                        <div class="modal-card" id="Message">
+                            <span class="tag"></span>
+                        </div>
+                    </div>
+                    <div class="c-3-lg c-3-md c-1-sm close-modal"></div>
+                </div>
+            </div>
+        </div>
+    <main>
+        <div class="container">
+            <section id="Images" class="images-cards">
+                <form action="upload.php" method="post" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-12" id="add-photo-container">
+                            <div class="add-new-photo first" id="add-photo">
+                                <span><i class="icon-camera"></i></span>
+                            </div>
+                            <input type="file" multiple id="add-new-photo" name="images[]">
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
 
-        <footer class="footer">
-            <div class="container text-center">
-                <img src="images/logoPortalGrande2.png" alt="desk">
-                <!--span class="alo">PORTAL AGENTE</!--span>-->
+        <!--CONTACTO-->
+
+         <footer class="footer">
+             <div class="container text-center">
+                 <img src="images/logoPortalGrande2.png" alt="desk">
+                 <!--span class="alo">PORTAL AGENTE</!--span>-->
                 <ul class="social list-inline">
                     <li><a href="#"><i class="icon icon-social-twitter"></i></a></li>
                     <li><a href="#"><i class="icon icon-social-facebook"></i></a></li>
